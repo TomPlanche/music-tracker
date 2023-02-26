@@ -1,0 +1,58 @@
+/**
+* @file src/components/Loading/Loading.module.scss
+* @description Loading component style.
+* @author Tom Planche
+*/
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  z-index: 1000;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 8rem;
+    margin-top: 5rem;
+
+    a {
+      height: 100%;
+      width: auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 1.5rem;
+
+      img {
+        height: 5rem;
+        width: 5rem;
+
+        object-fit: contain;
+
+      }
+    }
+  }
+}
+
+/**
+ * End of file src/components/Loading/Loading.module.scss
+ */

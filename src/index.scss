@@ -1,0 +1,28 @@
+/**
+ * @file src/index.scss
+ * @description Base style for the whole app.
+ * @author Tom Planche
+ */
+
+@import "src/styles/reset";
+@import "src/styles/base";
+@import "src/styles/variables";
+
+body {
+  min-height: 100svh;
+  min-width: 100vw;
+
+  background: linear-gradient(
+    135deg,
+    $rich-black -10%,
+    $form-bg-black 100%
+  );
+
+  &.light {
+      background: $white;
+  }
+}
+
+/**
+ * End of file src/index.scss
+ */

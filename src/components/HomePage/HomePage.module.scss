@@ -1,0 +1,22 @@
+/**
+* @file src/components/HomePage/HomePage.module.scss
+* @description HomePage component style.
+* @author Tom Planche
+*/
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+/**
+ * End of file src/components/HomePage/HomePage.module.scss
+ */

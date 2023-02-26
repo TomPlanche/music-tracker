@@ -1,0 +1,120 @@
+/**
+* @file src/components/UsernameForm/UsernameForm.module.scss
+* @description UsernameForm component style.
+* @author Tom Planche
+*/
+
+.usernameForm {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__title {
+    width: 100%;
+
+    margin-top: 1rem;
+
+    font-family: Migra, sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    color: $white;
+
+    margin-bottom: 5rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 4rem;
+
+    border-radius: 5px;
+
+    outline: $border-color 2px solid;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+
+  &__input,
+  &__button {
+    margin: 1rem 0;
+    padding: 1rem;
+
+    outline: $border-color 2px solid;
+
+    border-radius: 5px;
+    background: $form-bg-black;
+
+    color: $white;
+
+    width: 100%;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+
+    transition:
+      background-color .5s ease-in-out,
+      color .5s ease-in-out,
+      outline .2s ease-in-out;
+
+    &:hover {
+      outline: $blue-dimmed 2px solid;
+      background-color: $button-color;
+    }
+
+    &:focus {
+      outline: $blue 2px solid;
+    }
+  }
+
+  &__input {
+    margin: 3rem 0;
+
+    &:disabled {
+      background-color: $button-color;
+      color: $white;
+    }
+  }
+
+  // When the button is disabled
+  &__button:disabled {
+    cursor: not-allowed;
+  }
+
+  &__buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    width: 100%;
+  }
+
+  img {
+    height: 15rem;
+    width: 15rem;
+
+    object-fit: contain;
+
+    border-radius: 1rem;
+
+    margin-bottom: 4rem;
+  }
+}
+
+/**
+ * End of file src/components/UsernameForm/UsernameForm.module.scss
+ */

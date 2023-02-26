@@ -1,0 +1,23 @@
+/**
+ * @file src/App.module.scss
+ * @description
+ * @author Tom Planche
+ */
+
+.App {
+  min-height: 100svh;
+  min-width: 100vw;
+
+
+  font-family: Cirka, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/**
+ * End of file src/App.module.scss
+ */
