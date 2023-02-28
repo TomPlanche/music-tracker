@@ -134,6 +134,11 @@ class LastFM_handler {
         })
         .catch(error => {
           reject(error);
+
+          // If error is net::ERR_INTERNET_DISCONNECTED
+          if (error === "net::ERR_INTERNET_DISCONNECTED") {
+
+          }
         });
     });
   }

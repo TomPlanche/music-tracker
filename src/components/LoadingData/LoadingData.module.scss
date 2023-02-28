@@ -1,0 +1,59 @@
+/**
+* @file src/components/LoadingData/LoadingData.module.scss
+* @description LoadingData component style.
+* @author Tom Planche
+*/
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 3rem;
+  width: 60vw;
+
+  background: $form-bg-black;
+  color: $white;
+
+  position: relative;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  border-radius: 2rem;
+
+  margin: 1rem 0;
+
+  overflow: hidden;
+
+  p {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    // Vertical centering
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Horizontal centering
+    text-align: center;
+  };
+
+  &__inner {
+    height: 100%;
+    width: 0;
+
+    background: $blue;
+
+    transform-origin: left;
+  }
+
+}
+
+/**
+ * End of file src/components/LoadingData/LoadingData.module.scss
+ */

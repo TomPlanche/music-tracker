@@ -1,9 +1,13 @@
 
 node_modules
+.idea
+dist
 build
 
 .env
-.idea
+.env.production
+package-lock.json
 
 
 **.DS_Store**
+/src/assets/data.json

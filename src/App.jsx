@@ -6,13 +6,14 @@
 // IMPORTS ===================================================================================================  IMPORTS
 import {createContext, useEffect, useState} from "react";
 
-import Apitests from "./components/Apitests/Apitests.jsx";
+import LoadingData from "./components/LoadingData/LoadingData.jsx";
 import Loading from "./components/Loading/Loading.jsx";
 import UsernameForm from "./components/UsernameForm/UsernameForm.jsx";
 
 import styles from './App.module.scss'
 
 import LastFM_handler from "/src/assets/LastFM_handler.js";
+import FileTreatmentTest from "./components/FileTreatmentTest/FileTreatmentTest.jsx";
 // END IMPORTS ==========================================================================================   END IMPORTS
 
 // VARIABLES ================================================================================================ VARIABLES
@@ -68,13 +69,14 @@ function App() {
     <div className={styles.App}>
       {
         API_TESTS ?
-          <Apitests/>
+          <LoadingData/>
+          // <FileTreatmentTest />
           :
           <StepContext.Provider value={{step, onDataRecievedFromChild}}>
             <div className={styles.App}>
               {step === 0 && <Loading/>}
               {step === 1 && <UsernameForm />}
-              {step === 2 && <div>{username}</div>}
+              {step === 2 && <LoadingData username={username} />}
             </div>
           </StepContext.Provider>
       }
